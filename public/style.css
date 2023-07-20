@@ -1,9 +1,335 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
 canvas {
     display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+body {
+    /* background-color: rgb(12, 9, 20); */
+    /* background-color: rgb(0, 0, 230); */
+
+    /*grid of dots*/
+    /* background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px); */
+
+    /* background:
+        linear-gradient(-90deg, rgb(102, 102, 0) 0.3px, transparent 0.3px),
+        linear-gradient(rgb(102, 102, 0) 0.3px, transparent 0.3px),
+        /* rgb(0, 0, 230); */
+    /*   rgb(12, 9, 20);
+    background-size:
+        40px 40px,
+        40px 40px,
+        80px 80px; */
+
+
+
+    background-color: blue;
+    font-family: 'Times New Roman';
+    /* color: rgb(241, 255, 229); */
+    color: rgb(251, 255, 0);
+}
+
+ul {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    /* grid-template-columns: 23% 23% 23% 23%;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    align-items: center; */
+}
+
+nav a {
+    background: yellow;
+    font-size: 60px;
+    border: none;
+    padding: 2px;
+}
+
+nav a:hover {
+    text-transform: uppercase;
+    font-size: 60px;
+    /* font-size: 36px; */
+    /* background: none;
+    color: lime;
+    border: solid white 8px;
+    border-radius: 25px; */
+}
+
+nav li {
+    margin: 3px;
+    display: inline;
+}
+
+nav .active {
+    font-size: 60px;
+    /* background: #f1e6fa; */
+    background: lightgray;
+    background: black;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #0000ff;
+
+}
+
+nav a:visited {
+    color: blue;
+}
+
+nav .category {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+    color: yellow;
+    /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
+}
+
+nav img {
+    margin-top: 8px;
+
+}
+
+h1 {
+    /* text-align: left; */
+    display: block;
+    color: blue;
+    ;
+    background-color: yellow;
+    font-size: 50px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    /* margin-top: 75px; */
+    /* margin-left: 200px; */
+    /* margin-bottom: 20px; */
+    font-family: 'Times New Roman';
+    /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
+}
+
+body h2 {
+    font-size: 26px;
+    color: lime;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+}
+
+.model_info {
+    color: yellow;
+    font-size: 20px;
+    padding-bottom: 40px;
+    width: 810px;
+    margin: auto;
+}
+
+img#me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    width: 514px;
+    height: 682px;
+}
+
+main p {
+    color: yellow;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 32px;
+    padding-bottom: 40px;
+    width: 810px;
+    /* margin-left: 200px; */
+
+}
+
+main p a {
+    color: lime;
+    background: black;
+    font-size: 24px;
+}
+
+.quotation {
+    text-align: right;
+    font-style: italic;
+    color: lime;
+    font-size: 28px;
+}
+
+figcaption {
+    display: inline;
+    font-size: 24px;
+    background: black;
+}
+
+.skip {
+    background: #f1e6fa;
+    height: 30px;
+    left: 5%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-200%);
+}
+
+.skip:focus {
+    transform: translateY(0%);
+    position: relative;
+}
+
+.gallery {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 80%;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.gallery img {
+    width: 90%;
+    margin: 5%;
+}
+
+
+.p5_gallery {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 90%;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.p5_gallery img {
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.myButtons {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    font-family: 'Times New Roman';
+}
+
+/* Styles the whole slider */
+.mySliders {
+    width: 80px;
+    background-color: transparent;
+    position: absolute;
+
+    /* Removes some defaults */
+    -webkit-appearance: none;
+}
+
+/* These styles affect what happens when the cursor is focused on the slider (i.e. clicking it) */
+.mySliders:focus {
+
+    /* Stops the default outline showing up */
+    outline: none;
+}
+
+/* This is the "track" that the slider sits on  */
+.mySliders::-webkit-slider-runnable-track {
+    background: #000000;
+    height: 3px;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+}
+
+/* This is the moveable bit of the slider, known as the "thumb"*/
+.mySliders::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    background: #5500cc;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+    border-radius: 8px;
+}
+
+.pdf_links {
+    margin-left: 125px;
+    margin-bottom: 100px;
+}
+
+.pdf {
+    margin-bottom: 10px;
+}
+
+.pdf a {
+    color: lime;
+    font-size: 36px;
+}
+
+.pdf a:hover {
+    text-transform: uppercase;
+}
+
+.pdf_header {
+    font-size: 26px;
+    color: yellow;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 650px) {
+
+    /* h1 {
+        /* margin-top: 30px;
+        margin-bottom: 30px; */
+    /* } */
+
+    .gallery {
+        grid-template-columns: 25% 25% 25%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .p5_gallery {
+        grid-template-columns: 40% 40%;
+    }
+
+    /* .p5_gallery img {
+        width: 100%;
+    } */
+}
+
+
+
+@media only screen and (min-width: 950px) {
+
+    /* h1 {
+        /* margin-top: 50px; */
+    /* } */
+
+    .gallery {
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .p5_gallery {
+        grid-template-columns: 30% 30% 30%;
+    }
+
+    .p5_gallery img {
+        width: 100%;
+    }
 }
