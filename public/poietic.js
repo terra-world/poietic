@@ -22,7 +22,7 @@ function setup() {
     }
     // Start a socket connection to the server
     // Some day we would run this server somewhere else
-    sock = io.connect('https://poietic.onrender.com');
+    sock = io.connect('poietic.onrender.com:10000');
 
     sock.on('mouse',
         // receiving data
